@@ -1,3 +1,5 @@
+@import "./button.scss";
+
 *{
     margin:0;
     font-family:'Noto Serif JP', serif;
@@ -12,20 +14,22 @@ header{
     position:relative;
     background-image:url("./image.jpg");
     width:100%;
-    height:730px;
+    height:700px;
     background-position: bottom 10% center ;
     background-repeat: no-repeat;
     color:rgb(233, 231, 231);
     #top{
-        background-color:rgb(45, 89, 48);
-        position:relative;
+        background-color:rgb(73, 163, 236);
+        position:fixed;
+        width:100%;
         padding:20px;
+        z-index:10;
         .menu{
             ul{
                 width:100%;
                 position:absolute;
                 top:50%;
-                left:50%;
+                left:45%;
                 text-align: right;
                 transform:translate(-50%,-50%);
                 vertical-align: center;
@@ -43,57 +47,85 @@ header{
     
     .kotoba{
         position:absolute;
-        top:35%;
-        left:50%;
-        transform: translate(-70%,-60%);
+        top:30%;
+        left:10%;
         font-size:28px;
         text-shadow: 1px 2px 3px #303030;
     }
 }
 
 .news{
-    .btn {
-        background-color: White;
-        color: Black;
-        border: 1px solid Black;
-        padding: 10px 40px;
-        margin: 50px 0;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.3s;
-    
-        &.cover-3d {
-            position: relative;
-            
-            z-index: 1;
-            transform-style:preserve-3d;
-            perspective:400px;
-            
-            &::before {
-               content: '';
-               display: inline-block;
-               width: 100%;
-               height: 100%;
-               background-color: rgb(24, 24, 23);
-               position: absolute;
-               top: 0;
-               left: 0;
-               transform: rotateX(90deg);
-               transition: all 0.3s;
-               z-index: -1;
-               transform-origin:top left;
-               opacity:0;
-            }
-    
-            &:hover {
-                color: White;
-    
-                &::before {
-                    transform: none;
-                    opacity:1;
-                    z-index: -1;
-                }
-            }
+    text-align: center;
+    h1{
+        margin:20px 0;
+    }
+    ul{
+        display:inline-block;
+        text-align:left;
+    }
+}
+.place{
+    .image{
+        img{
+            width:100%;
+            height:400px;
+            margin-bottom:-5px;
+        }
+    }
+    .text{
+        text-align:center;
+        background-color:rgb(209, 229, 210);
+    }
+}
+.subtitle{
+    text-align:center;
+    margin:40px 0 20px 0;
+}
+.wisky-menus{
+    display:table;
+    width:100%;
+    height:400px;
+    .ele{
+        display:table-cell;
+        width:50%;
+        margin-bottom:-10px;
+        border-top: 1px solid rgb(2, 97, 9);
+       
+        img{
+            width:100%;
+            height:400px;
+            margin-bottom:-5px;
+        }
+    }
+    .bbbbb{
+        position:relative;
+        text-align:center;
+        vertical-align: top;
+        color:white;
+        h2{
+            position:absolute;
+            top:5%;
+            left:50%;
+            transform:translate(-50%,0%);
+        }
+        span{
+            position:absolute;
+            top:30%;
+            left:50%;
+            transform:translate(-50%,0%);
+            font-weight:bold;
         }
     }
 }
+.mv{
+    width:80%;
+    margin:0 auto;
+    .movie{
+        text-align:center;
+        width:100%;
+        height:400px;
+        display:inline-block;
+    }
+}
+    
+
