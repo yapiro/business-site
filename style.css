@@ -172,15 +172,32 @@ header .kotoba {
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
+  opacity: 1;
 }
 
 .wisky-menus .bbbbb span {
   position: absolute;
-  top: 30%;
+  top: 0;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
   font-weight: bold;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.wisky-menus .bbbbb:hover h2 {
+  opacity: 0;
+}
+
+.wisky-menus .bbbbb:hover span {
+  opacity: 1;
+}
+
+.wisky-menus .ccccc h2 {
+  color: black;
 }
 
 .mv {
@@ -193,5 +210,13 @@ header .kotoba {
   width: 100%;
   height: 400px;
   display: inline-block;
+}
+
+.how-to-drink {
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
