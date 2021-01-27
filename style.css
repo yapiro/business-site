@@ -137,7 +137,7 @@ header .kotoba {
 
 .subtitle {
   text-align: center;
-  margin: 40px 0 20px 0;
+  margin: 20px 0 20px 0;
 }
 
 .wisky-menus {
@@ -200,6 +200,11 @@ header .kotoba {
   color: black;
 }
 
+.my-box {
+  background-color: #a9e3fa;
+  padding: 20px 0;
+}
+
 .mv {
   width: 80%;
   margin: 0 auto;
@@ -212,11 +217,67 @@ header .kotoba {
   display: inline-block;
 }
 
+.how-to-title {
+  text-align: center;
+}
+
 .how-to-drink {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.how-to-drink .left {
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.how-to-drink .left img {
+  width: 100%;
+  height: 400px;
+}
+
+.how-to-drink .right {
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.how-to-drink .right img {
+  width: 100%;
+  height: 400px;
+}
+
+.how-to-drink .right2 {
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.how-to-drink .right2 img {
+  width: 100%;
+  height: 400px;
 }
 
 .contact {
   text-align: center;
+  margin-top: 20px;
+  background-color: #d1e5d2;
+  padding: 20px;
+}
+
+.contact .btn-container {
+  padding-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

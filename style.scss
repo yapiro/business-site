@@ -79,7 +79,7 @@ header{
 }
 .subtitle{
     text-align:center;
-    margin:40px 0 20px 0;
+    margin:20px 0 20px 0;
 }
 .wisky-menus{
     display:table;
@@ -131,6 +131,10 @@ header{
         color:black;
     }
 }
+.my-box{
+    background-color: rgb(169, 227, 250);
+    padding:20px 0;
+}
 .mv{
     width:80%;
     margin:0 auto;
@@ -141,12 +145,55 @@ header{
         display:inline-block;
     }
 }
-.how-to-drink{
+.how-to-title{
     text-align:center;
 }
-
+.how-to-drink{
+    text-align:center;
+    display:flex;
+    .left{
+        width:40%;
+        margin:0 auto;
+        border:1px solid black;
+        padding:10px;
+        display:flex;
+        img{
+            width:100%;
+            height:400px;
+        }
+    }
+    .right{
+        width:40%;
+        margin:0 auto;
+        border:1px solid black;
+        padding:10px;
+        img{
+            width:100%;
+            height:400px;
+        }
+    }
+    .right2{
+        width:40%;
+        margin:0 auto;
+        border:1px solid black;
+        padding:10px;
+        img{
+            width:100%;
+            height:400px;
+        }
+    }
+}
 .contact{
     text-align:center;
+    margin-top:20px;
+    background-color:rgb(209, 229, 210);
+    padding:20px;
+    .btn-container{
+        padding-top:20px;
+        width:80%;
+        margin:0 auto;
+        background-color: white;
+    }
 }
     
 
