@@ -1,4 +1,5 @@
 @import "./button.scss";
+@import "mixin";
 
 *{
     margin:0;
@@ -197,3 +198,33 @@ header{
 }
     
 
+.cover-slide {
+    overflow: hidden;
+    opacity:0;
+    &.inview {
+        @include animation(
+          $name: kf-cover-slide,
+          $duration: 0.8s,
+          $timing-function: ease-in-out
+        );
+    }
+    @for $i from 1 through 4{
+        &:nth-child(#{$i}){
+            animation-delay: $i *0.3s;
+        }
+    }
+}
+  @keyframes kf-cover-slide {
+    0% {
+      transform-origin: left;
+      transform:translateY(50%);
+      opacity:0;
+    }
+    100% {
+      transform-origin: right;
+      opacity:1;
+      transform:translateY(0);
+    }
+  }
+
+  
